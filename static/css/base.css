@@ -19,6 +19,10 @@ header h1 a {
     display: flex;
     padding-top: 2rem;
 }
+
+.post-entry {
+    margin-bottom: 2rem;
+}
 .post-entry h2{
     margin: 0.5rem 0;
 }
