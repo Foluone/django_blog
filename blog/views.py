@@ -2,7 +2,8 @@ from django.shortcuts import render
 from django.contrib.auth.forms import UserCreationForm
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 from django.urls import reverse_lazy
-from .models import Post
+from .models import Post, Comment
+from .forms import SearchForm, CommentForm
 from django.views import generic
 
 # Create your views here.
@@ -34,3 +35,5 @@ class BlogDeleteView(DeleteView):
     model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('home')
+
+
